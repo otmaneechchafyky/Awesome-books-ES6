@@ -1,5 +1,5 @@
-import { Book } from "./modules/book.js";
-import { select } from "./modules/select.js";
+import Book from './modules/book.js';
+import select from './modules/select.js';
 
 const emptyTitle = document.getElementById('empty-title');
 const emptyAuthor = document.getElementById('empty-author');
