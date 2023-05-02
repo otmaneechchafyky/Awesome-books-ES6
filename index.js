@@ -1,8 +1,6 @@
 import Book from './modules/book.js';
 import select from './modules/select.js';
-
-const emptyTitle = document.getElementById('empty-title');
-const emptyAuthor = document.getElementById('empty-author');
+import displayTime from './modules/displayTime.js';
 
 class BooksList {
   constructor() {
@@ -11,22 +9,30 @@ class BooksList {
 
   AddBook(title, author) {
     if (title === '') {
-      emptyTitle.textContent = 'Please, Add the book title!';
+      document.getElementById('empty-title').textContent = 'Please, Add the book title!';
       setTimeout(
         () => {
-          emptyTitle.textContent = '';
+          document.getElementById('empty-title').textContent = '';
         }, 3000,
       );
     } else if (author === '') {
-      emptyAuthor.textContent = 'Please, Add the book author name!';
+      document.getElementById('empty-author').textContent = 'Please, Add the name of the author!';
       setTimeout(
         () => {
-          emptyAuthor.textContent = '';
+          document.getElementById('empty-author').textContent = '';
         }, 3000,
       );
     } else {
       const newBook = new Book(title, author);
       this.books.push(newBook);
+      document.querySelector('.success-before').textContent = 'Your Books is Added successfully';
+      document.querySelector('.success-before').classList.add('success-after');
+      setTimeout(
+        () => {
+          document.querySelector('.success-before').textContent = '';
+          document.querySelector('.success-before').classList.remove('success-after');
+        }, 3000,
+      );
     }
   }
 
@@ -46,7 +52,7 @@ class BooksList {
     this.books.forEach((book) => {
       // Create articles Container
       const bookInfo = document.createElement('div');
-      bookInfo.classList.add('book-info', 'flex-row');
+      bookInfo.classList.add('book-info');
       bookInfo.innerHTML = `<p><span class="book-title">"${book.title}"</span> by <span class="book-author"> ${book.author}</span></p>`;
 
       // Create the Remove button
@@ -104,3 +110,4 @@ const booksList = new BooksList();
 booksList.Magic();
 
 select();
+displayTime();
