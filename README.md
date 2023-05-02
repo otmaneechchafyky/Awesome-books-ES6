@@ -168,6 +168,8 @@ Example command:
 ### Usage
 
 To run the project, execute the following command:
+  - npm install --save luxon
+
 <!--
 Example command:
 
