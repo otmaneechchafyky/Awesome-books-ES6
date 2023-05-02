@@ -7,7 +7,7 @@ class BooksList {
     this.books = [];
   }
 
-  AddBook(title, author) {
+  AddBook = (title, author) => {
     if (title === '') {
       document.getElementById('empty-title').textContent = 'Please, Add the book title!';
       setTimeout(

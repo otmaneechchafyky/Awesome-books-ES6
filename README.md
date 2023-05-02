@@ -109,7 +109,9 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://momo-87.github.io/awesome-books/)
+- [Live Demo Link]
+
+  - n/a
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +139,7 @@ Example command:
 
 Clone this repository to your desired folder:
 - cd my-folder
-- git clone https://github.com/momo-87/awesome-books.git
+- git clone https://github.com/otmaneechchafyky/Awesome-books-ES6.git
 
 <!--
 Example commands:
@@ -166,12 +168,11 @@ Example command:
 ### Usage
 
 To run the project, execute the following command:
-- Run it on your live server
 <!--
 Example command:
 
 ```sh
-  rails server
+  npm install --save luxon
 ```
 --->
 
@@ -229,7 +230,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/momo-87/awesome-books/issues).
+Feel free to check the [issues page](https://github.com/otmaneechchafyky/Awesome-books-ES6/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
